@@ -29,7 +29,7 @@ const NotesSchema = new mongoose.Schema({
         type:Date  
        ,required:"true"
         },
-        reminder: { type: Date } 
+        
        
 })
 module.exports = mongoose.model('notes', NotesSchema)
