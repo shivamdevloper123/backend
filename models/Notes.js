@@ -20,15 +20,16 @@ const NotesSchema = new mongoose.Schema({
     },
     tag: {
         type: String,
-        defult: "General"
+        default: "General"
 
 
     },
+
     date: {
-        type: Date,
-        defult: Date.now
-
-
-    }
+        type:Date  
+       ,required:"true"
+        },
+        reminder: { type: Date } 
+       
 })
 module.exports = mongoose.model('notes', NotesSchema)
